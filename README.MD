@@ -2,6 +2,34 @@
 
 Prebuilt AOSP emulator images prepared for sharing through GitHub.
 
+## Automotive MySystemApp image v3
+
+- Build date: 2026-08-14
+- Product: `sdk_car_mysystemapp_x86_64`
+- Android: 17 (Baklava), API 37
+- ABI: `x86_64`
+- Build ID: `CP2A.260605.016`
+- Image: Automotive AVD containing the `MySystemApp` build and Automotive
+  VHAL test/configuration artifacts.
+- Original ZIP SHA-256:
+  `4e5b86c9b7abc5a45087f16044174a4d0b937a00b27f205ccb36b7d8a4168ca1`
+- The archive is split into 8 volumes, each below 100 MB, for GitHub upload:
+  `sdk-repo-linux-system-images-automotive-mysystemapp-v3.7z.001` through
+  `.008`.
+
+### Restore the v3 image
+
+Place all 8 v3 volumes in one directory, then run:
+
+```bash
+7z t sdk-repo-linux-system-images-automotive-mysystemapp-v3.7z.001
+7z x sdk-repo-linux-system-images-automotive-mysystemapp-v3.7z.001
+```
+
+The extracted file is `sdk-repo-linux-system-images-automotive-mysystemapp-v3.zip`.
+See `sdk-repo-linux-system-images-automotive-mysystemapp-v3.manifest` for
+checksums and exact volume sizes.
+
 ## Automotive MySystemApp image
 
 - Build date: 2026-08-02
